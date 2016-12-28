@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>Sirius.OneSky</id>
+		<version>1.0.0</version>
+		<authors>avonwyss</authors>
+		<owners>Sirius Technologies AG</owners>
+		<licenseUrl>https://raw.githubusercontent.com/siriusch/Sirius.OneSky/master/LICENSE.txt</licenseUrl>
+		<projectUrl>https://github.com/siriusch/Sirius.OneSky</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Wrapper for OneSky API</description>
+		<copyright>Copyright 2016 Sirius Technologies AG</copyright>
+		<tags>onesky</tags>
+		<dependencies>
+			<dependency id="System.Net.Http" version="4.0.0" />
+			<dependency id="Newtonsoft.Json" version="6.0.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\$Configuration$\Sirius.OneSky.*" target="lib" />
+	</files>
+</package>

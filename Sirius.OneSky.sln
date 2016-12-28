@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sirius.OneSky", "Sirius.OneSky\Sirius.OneSky.csproj", "{92E94F60-68AC-4099-93C7-7BE44A0A7048}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EDF86875-3E69-47C4-B020-1B3D38B7FE64}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+		Rebracer.xml = Rebracer.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92E94F60-68AC-4099-93C7-7BE44A0A7048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92E94F60-68AC-4099-93C7-7BE44A0A7048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92E94F60-68AC-4099-93C7-7BE44A0A7048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92E94F60-68AC-4099-93C7-7BE44A0A7048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
