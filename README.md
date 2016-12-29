@@ -1,7 +1,7 @@
 OneSky API wrapper for .NET
 ===========================
 
-Wrapper for simple access to all API functions of OneSky ("new API"), which takes care of correctly authenticateing and marshalling data between .NET POCO (with PascalCase or camelCase member naming convention) and the API calls.
+Wrapper for simple access to all API functions of OneSky ("new API"), which takes care of correctly authenticating and marshalling data between .NET POCO (with PascalCase or camelCase member naming convention) and the API calls.
 
 See https://github.com/onesky/api-documentation-platform for available API.
 
@@ -10,7 +10,7 @@ Usage
 
 The wrapper is generic, so that any existing (and future) method of can be invoked. Therefore, the following list is not comprehensive as it represents just a few examples.
 
-For all operations, an instance of `ApiClient` needs to be used; we assume an instance named `client` in the following examples. The instance holds the API URI and keys. SInce the instance wraps a `HttpClient`, the same re-use and thread-safety guidelines apply. In summary, use a single instance for the lifetime of your application, you may use it from multiple threads, and it should be disposed at the end.
+For all operations, an instance of `ApiClient` needs to be used; we assume an instance named `client` in the following examples. The instance holds the API URI and keys. Since the instance wraps a `HttpClient`, the same re-use and thread-safety guidelines apply. In summary, use a single instance for the lifetime of your application, you may use it from multiple threads, and it should be disposed at the end.
 
 ### List Project Groups
 
@@ -60,7 +60,7 @@ using (MemoryStream data = new MemoryStream()) {
 ```C#
 var jsonContent = new StringContent(@"{ ""key"": ""Some text"" }");
 jsonContent.Headers.ContentDisposition = new ContentDispositionHeaderValue("form-data") {
-	FileName = lf.RemoteFileName,
+	FileName = remoteFileName
 };
 jsonContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 var response = client.Post<ApiFileUploadInfo>(projectFilesUri, new {
@@ -73,7 +73,7 @@ var response = client.Post<ApiFileUploadInfo>(projectFilesUri, new {
 
 ```C#
 var response = client.Delete<ApiName>(projectFilesUri, new {
-	rf.FileName
+	FileName = remoteFileName
 }).Result;
 ```
 
